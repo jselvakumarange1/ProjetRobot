@@ -2,7 +2,7 @@
 # If you would like to add your own targets, create a
 # project.cmake file locally in your project directory.
 
-CMAKE_MINIMUM_REQUIRED(VERSION 3.9)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.7.2)
 SET(CMAKE_SYSTEM_NAME Generic)
 #SET(CMAKE_SYSTEM_PROCESSOR arm)
 SET(CMAKE_CROSSCOMPILING TRUE)

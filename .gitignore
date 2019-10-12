@@ -1,0 +1,22 @@
+# # Copyright (c) 2018 Antoine Tran Tan
+# #
+
+# # Ignore everything
+# *
+
+# # Except certain file extensions
+# !*.cpp
+# !*.c
+# !*.hpp
+# !*.h
+# !*.md
+# !*.png
+# !*.gif
+# !*.jpg
+# !CMakeLists.txt
+
+# # ...even if they are in subdirectories
+# !*/
+
+# # ...but not in 'build' folder
+# /build

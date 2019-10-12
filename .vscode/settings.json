@@ -1,0 +1,9 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "cmake.preferredGenerators": [
+        "Ninja",
+        "Unix Makefiles"
+      ],
+      "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+}

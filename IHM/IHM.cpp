@@ -122,8 +122,8 @@ void IHM::CAN_automate_reception(void)
 /* FUNCTION NAME: IHM_gotoxy                                                            */
 /* DESCRIPTION  : Modifie la position du curseur sur l'afficheur LCD de la carte IHM    */
 /* RETURN       : VOID                                                                  */
-/* PARAMETER  1 : UINT8 x : indice de la ligne   (0 à 1)                                */
-/* PARAMETER  2 : UINT8 y : indice de la colonne (0 à 15)                               */
+/* PARAMETER  1 : UINT8 x : indice de la ligne   (0 a 1)                                */
+/* PARAMETER  2 : UINT8 y : indice de la colonne (0 a 15)                               */
 /****************************************************************************************/
 void IHM::LCD_gotoxy (UINT8 y, UINT8 x)
 {
@@ -149,9 +149,9 @@ void IHM::LCD_clear(void)
 /****************************************************************************************/
 /* FUNCTION NAME: BAR_set                                                             */
 /* DESCRIPTION  : commande les 10 LED du bargraph                                                       */
-/* PARAMETER  1 : UINT16 valeur : ordre d'allumage, exprimé sur les 10 bits de droite.
-                  Le bit k doit valoir 0 pour allumer la LED k, 1 pour l'éteindre.
-                  Exemple :  ~(1<<9) allume la LED 9, ~0x00F allume les 4 LED 0 à 3                                                                 */
+/* PARAMETER  1 : UINT16 valeur : ordre d'allumage, exprime sur les 10 bits de droite.
+                  Le bit k doit valoir 0 pour allumer la LED k, 1 pour l'eteindre.
+                  Exemple :  ~(1<<9) allume la LED 9, ~0x00F allume les 4 LED 0 a 3                                                                 */
 /****************************************************************************************/
 void IHM::BAR_set(UINT16 valeur)
 {
@@ -168,21 +168,21 @@ void IHM::BAR_set(UINT16 valeur)
 /* FUNCTION NAME: JOG_read                                                             */
 /* DESCRIPTION  : indique la position (parmi les 8 possibles) et l'enfoncement du Jog. */
 /* RETURN       : un octet UINT8 qui indique la position (RIGHT, LEFT, UP, DOWN + 4 combinaisons)
-                  et l'enfoncement (PUSH) du Jog, exprimés sur 5 bits utiles.*/
+                  et l'enfoncement (PUSH) du Jog, exprimes sur 5 bits utiles.*/
 
 /*         - Si le Jog est au repos : la fonction renvoie 0 (0x00).
-         - si le Jog n'est pas au repos : 1 à 3 bits peuvent être mis à 1 dans l'octet renvoyé.
-           Il est intéressant d'utiliser les masques définis en constantes.
-           La signification des 8 bits de la valeur renvoyée est:
+         - si le Jog n'est pas au repos : 1 a 3 bits peuvent être mis a 1 dans l'octet renvoye.
+           Il est interessant d'utiliser les masques definis en constantes.
+           La signification des 8 bits de la valeur renvoyee est:
                      0   0   0   RIGHT   UP   PUSH   LEFT   DOWN
-           Plusieurs bits peuvent être à 1 en même temps. Par exemple :  RIGHT + UP + PUSH
-           à 1 indiquent que le Jog est en position "Nord Est " (UP+RIGHT) et qu'il est enfoncé.
-           Si le Jog est simultanément enfoncé et positionné à droite, la fonction renvoie
-           (0001 0100) en binaire, soit 0x14. Exprimée avec les masques, la valeur renvoyée vaut
+           Plusieurs bits peuvent être a 1 en même temps. Par exemple :  RIGHT + UP + PUSH
+           a 1 indiquent que le Jog est en position "Nord Est " (UP+RIGHT) et qu'il est enfonce.
+           Si le Jog est simultanement enfonce et positionne a droite, la fonction renvoie
+           (0001 0100) en binaire, soit 0x14. Exprimee avec les masques, la valeur renvoyee vaut
            JOG_MSK_RIGHT | JOG_MSK_PUSH  (0x14). */
 /**************************************************************************************************/
 /**************************************************************************************************/
-/* utiliser les Constantes symboliques de IHM.h pour interpréter la valeur renvoyée par le jog... */
+/* utiliser les Constantes symboliques de IHM.h pour interpreter la valeur renvoyee par le jog... */
 /**************************************************************************************************/
 
 UINT8 IHM::JOG_read(void)
@@ -199,13 +199,13 @@ UINT8 IHM::JOG_read(void)
 
 /***************************************************************************************************/
 /* FUNCTION NAME: COD_read                                                                         */
-/* DESCRIPTION  : indique la rotation effectuée par le codeur incrémental.                         */
+/* DESCRIPTION  : indique la rotation effectuee par le codeur incremental.                         */
 /* RETURN       : un octet UINT8 dont la valeur entre 0 et 255 indique la rotation du
-                  codeur incrémental depuis l'initialisation du codeur (cad de la carte IHM),
-                  exprimée en douzièmes de tours. Le codeur dispose en effet de 12 positions
-                  et la valeur retournée s'incrémente/se décrémente à chaque 12e de tour.
-                  Par exemple, si le codeur a été tourné de 2 tours et demi, la valeur
-                  retournée vaut 12+12+6 = 30 = 0x1E (le codeur a effectué 30 douzièmes de tour)   */
+                  codeur incremental depuis l'initialisation du codeur (cad de la carte IHM),
+                  exprimee en douziemes de tours. Le codeur dispose en effet de 12 positions
+                  et la valeur retournee s'incremente/se decremente a chaque 12e de tour.
+                  Par exemple, si le codeur a ete tourne de 2 tours et demi, la valeur
+                  retournee vaut 12+12+6 = 30 = 0x1E (le codeur a effectue 30 douziemes de tour)   */
 /***************************************************************************************************/
 
 UINT8 IHM::COD_read(void)

@@ -618,7 +618,7 @@ typedef struct {
                                                 ((CHANNEL) == TIM_CHANNEL_3))
 
 #define IS_TIM_PWM_MODE(MODE) (((MODE) == TIM_OCMODE_PWM1) || \
-	                       ((MODE) == TIM_OCMODE_PWM2))
+                           ((MODE) == TIM_OCMODE_PWM2))
 
 #define IS_TIM_OC_MODE(MODE) (((MODE) == TIM_OCMODE_TIMING)           || \
                               ((MODE) == TIM_OCMODE_ACTIVE)           || \
@@ -684,7 +684,7 @@ typedef struct {
                                                 ((CHANNEL) == TIM_CHANNEL_3))
 
 #define IS_TIM_PWM_MODE(MODE) (((MODE) == TIM_OCMODE_PWM1)               || \
-	                       ((MODE) == TIM_OCMODE_PWM2)               || \
+                           ((MODE) == TIM_OCMODE_PWM2)               || \
                                ((MODE) == TIM_OCMODE_COMBINED_PWM1)      || \
                                ((MODE) == TIM_OCMODE_COMBINED_PWM2)      || \
                                ((MODE) == TIM_OCMODE_ASSYMETRIC_PWM1)    || \

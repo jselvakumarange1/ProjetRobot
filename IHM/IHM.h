@@ -11,11 +11,11 @@
 #include "all_includes.h"
 #define SIZE_FIFO 32
 #define MESSAGE_BUFFER_SIZE 20
-#define JOG_MSK_PUSH   (1<<2)   // valeur renvoyée si le Jog est enfoncé (en position de repos)
-#define JOG_MSK_RIGHT  (1<<4)   // valeur renvoyée si le Jog est poussé vers la droite (non enfoncé).
-#define JOG_MSK_UP     (1<<3)   // valeur renvoyée si le Jog est poussé vers le haut (non enfoncé).
-#define JOG_MSK_LEFT   (1<<1)   // valeur renvoyée si le Jog est poussé vers la gauche (non enfoncé).
-#define JOG_MSK_DOWN   1        // valeur renvoyée si le Jog est poussé vers le bas (non enfoncé).
+#define JOG_MSK_PUSH   (1<<2)   // valeur renvoyee si le Jog est enfonce (en position de repos)
+#define JOG_MSK_RIGHT  (1<<4)   // valeur renvoyee si le Jog est pousse vers la droite (non enfonce).
+#define JOG_MSK_UP     (1<<3)   // valeur renvoyee si le Jog est pousse vers le haut (non enfonce).
+#define JOG_MSK_LEFT   (1<<1)   // valeur renvoyee si le Jog est pousse vers la gauche (non enfonce).
+#define JOG_MSK_DOWN   1        // valeur renvoyee si le Jog est pousse vers le bas (non enfonce).
 //
 ///
 /// Example:
@@ -57,14 +57,14 @@
 class IHM
 {
 public:
-    /// Constructeur pour l'IHM de la carte NBoard, placé à l'extérieur du main
-    /// Les paramètres peuvent être omis (ils ont tous une valeur par défaut)
+    /// Constructeur pour l'IHM de la carte NBoard, place a l'exterieur du main
+    /// Les parametres peuvent être omis (ils ont tous une valeur par defaut)
     ///
     IHM(PinName CANRx=PA_11, PinName CANTx=PA_12);
     /// commande des 10 leds du bargraph
     ///
-    /// Affiche la valeur passée en argument sur le bargraph
-    /// @param valeur à afficher sur le bargraph
+    /// Affiche la valeur passee en argument sur le bargraph
+    /// @param valeur a afficher sur le bargraph
     /// @returns void
     ///
     void BAR_set(UINT16 valeur);
@@ -83,7 +83,7 @@ public:
     ///
     void LCD_gotoxy(UINT8 y,UINT8 x);
 
-    /// écriture formatée sur l'afficheur LCD
+    /// ecriture formatee sur l'afficheur LCD
     ///
     /// @param  format...
     /// @returns void
@@ -96,7 +96,7 @@ public:
     ///
     void LCD_clear(void);
     /// lecture du JOG
-    /// retourne la position (8 possibilités) et l'enfoncement du Jog
+    /// retourne la position (8 possibilites) et l'enfoncement du Jog
     /// @param  void
     /// @returns valeur JOG
     ///

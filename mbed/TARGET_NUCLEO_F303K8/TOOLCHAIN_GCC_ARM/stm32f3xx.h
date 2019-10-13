@@ -9,7 +9,7 @@
   *           - Configuration section that allows to select:
   *              - The STM32F3xx device used in the target application
   *              - To use or not the peripheral's drivers in application code(i.e.
-  *                code will be based on direct access to peripheral�s registers
+  *                code will be based on direct access to peripheral's registers
   *                rather than drivers API), this option is controlled by
   *                "#define USE_HAL_DRIVER"
   *

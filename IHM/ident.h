@@ -33,7 +33,7 @@
 #define   LCD_CHAR3      0x703 //|  M  |  O  |  D  |char 24 a 31 sur LCD|  8   |  U8  | C24|C25|C26|C27|C28|C29|C30|C31   |
 //                             //|     |     |     |                    |      |      |                                   |
 //                       0x704 //|     |     |     |                    |      |      | Reserve pour un eventuel LCD      |
-// Réservé               ...   //|     |     |     |                    |      |      | plus grand ou tactile             |
+// Reserve               ...   //|     |     |     |                    |      |      | plus grand ou tactile             |
 //                       0x77D //|     |     |     |                    |      |      |                                   |
 //                             //|     |     |     |                    |      |      |                                   |
 #define   LCD_OVERFLOW   0x77E //|  M  |  O  |  R  |Flag d'Overflow LCD |  0   |      |                                   |
@@ -46,12 +46,12 @@
 #define   COD_REQ        0x7A0 //|  M  |  I  |  R  | Demande valeur COD |  0   |      |                                   |
 #define   COD_DATA       0x7A1 //|  M  |  O  |  D  |     Valeur COD     |  1   |  S8  | OFFSET du CODEUR entre -128 et 127|
 // BARGRAPH                      |     |     |     |                    |      |      |                                   |
-#define   BAR_SET        0x7B0 //|  M  |  I  |  D  |   valeur bargraph  |  2   |  U16 | Les bits à allumer                |
+#define   BAR_SET        0x7B0 //|  M  |  I  |  D  |   valeur bargraph  |  2   |  U16 | Les bits a allumer                |
 //------------------------------------------------------------------------------------------------------------------------|
-/* Légende : I = Consigne pour la carte
-             O = Etat donné par la carte
+/* Legende : I = Consigne pour la carte
+             O = Etat donne par la carte
 
-             D = Trame de données
+             D = Trame de donnees
              R = Trame de requete */
 
 #endif

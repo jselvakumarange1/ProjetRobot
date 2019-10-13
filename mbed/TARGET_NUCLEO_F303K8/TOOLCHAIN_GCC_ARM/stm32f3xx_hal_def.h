@@ -115,7 +115,7 @@ typedef enum
                                     {                                      \
                                        (__HANDLE__)->Lock = HAL_LOCKED;    \
                                     }                                      \
-       	                          }while (0U)
+                                     }while (0U)
 
   #define __HAL_UNLOCK(__HANDLE__)                                          \
                                   do{                                       \
@@ -131,21 +131,21 @@ typedef enum
 // MBED patch
 static inline  void atomic_set_u32(volatile uint32_t *ptr, uint32_t mask)
 {
-	uint32_t newValue;
-	do {
-		newValue = (uint32_t)__LDREXW(ptr) | mask;
+    uint32_t newValue;
+    do {
+        newValue = (uint32_t)__LDREXW(ptr) | mask;
 
-	} while (__STREXW(newValue, ptr));
+    } while (__STREXW(newValue, ptr));
 }
 
 // MBED patch
 static inline  void atomic_clr_u32(volatile uint32_t *ptr, uint32_t mask)
 {
-	uint32_t newValue;
-	do {
-		newValue = (uint32_t)__LDREXW(ptr) &~mask;
+    uint32_t newValue;
+    do {
+        newValue = (uint32_t)__LDREXW(ptr) &~mask;
 
-	} while (__STREXW(newValue, ptr));
+    } while (__STREXW(newValue, ptr));
 }
 
 // MBED patch

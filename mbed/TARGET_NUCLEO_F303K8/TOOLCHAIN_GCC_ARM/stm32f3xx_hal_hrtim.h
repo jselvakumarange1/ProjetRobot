@@ -82,7 +82,7 @@ typedef struct
                                           This parameter can be any combination of  @ref HRTIM_Common_Interrupt_Enable */
   uint32_t SyncOptions;              /*!< Specifies how the HRTIM instance handles the external synchronization signals.
                                           The HRTIM instance can be configured to act as a slave (waiting for a trigger
-										  to be synchronized) or a master (generating a synchronization signal) or both.
+                                          to be synchronized) or a master (generating a synchronization signal) or both.
                                           This parameter can be a combination of @ref HRTIM_Synchronization_Options.*/
   uint32_t SyncInputSource;          /*!< Specifies the external synchronization input source (significant only when
                                           the HRTIM instance is configured as a slave).

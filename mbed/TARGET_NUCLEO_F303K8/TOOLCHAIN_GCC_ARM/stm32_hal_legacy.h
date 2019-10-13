@@ -34,6 +34,7 @@
   ******************************************************************************
   */
 
+
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __STM32_HAL_LEGACY
 #define __STM32_HAL_LEGACY

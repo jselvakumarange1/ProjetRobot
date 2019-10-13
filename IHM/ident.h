@@ -1,3 +1,7 @@
+//  Copyright (c) 2019 Antoine Tran Tan
+//  Copyright (c) 2012 Bruno Larnaudie
+//
+
 #ifndef _IDENT_H
 #define _IDENT_H
 

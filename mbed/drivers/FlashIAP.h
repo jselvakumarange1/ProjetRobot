@@ -40,7 +40,7 @@ extern uint32_t Load$$LR$$LR_IROM1$$Limit[];
 #elif defined(TOOLCHAIN_IAR)
 #pragma section=".rodata"
 #pragma section=".text"
-#define FLASHIAP_ROM_END (std::max((uint32_t) __section_end(".rodata"), (uint32_t) __section_end(".text")))
+#define FLASHIAP_ROM_END ((std::max)((uint32_t) __section_end(".rodata"), (uint32_t) __section_end(".text")))
 #endif
 
 namespace mbed {

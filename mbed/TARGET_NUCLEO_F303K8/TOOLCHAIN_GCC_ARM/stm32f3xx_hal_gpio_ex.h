@@ -33,6 +33,7 @@
   ******************************************************************************
   */
 
+
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __STM32F3xx_HAL_GPIO_EX_H
 #define __STM32F3xx_HAL_GPIO_EX_H

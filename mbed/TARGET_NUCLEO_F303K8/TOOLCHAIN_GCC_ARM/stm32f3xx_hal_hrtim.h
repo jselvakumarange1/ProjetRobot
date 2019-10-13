@@ -3076,6 +3076,7 @@ typedef struct {
   *                   @arg HRTIM_PRESCALERRATIO_DIV4: fHRCK: 36 MHz - Resolution: 27.7 ns- Min PWM frequency: 550Hz (fHRTIM=144MHz)
   * @retval None
   */
+
 #define __HAL_HRTIM_SETCLOCKPRESCALER(__HANDLE__, __TIMER__, __PRESCALER__) \
   (((__TIMER__) == HRTIM_TIMERINDEX_MASTER) ? (MODIFY_REG((__HANDLE__)->Instance->sMasterRegs.MCR, HRTIM_MCR_CK_PSC, (__PRESCALER__))) :\
    (MODIFY_REG((__HANDLE__)->Instance->sTimerxRegs[(__TIMER__)].TIMxCR, HRTIM_TIMCR_CK_PSC, (__PRESCALER__))))

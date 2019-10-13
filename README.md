@@ -43,6 +43,7 @@ la maison. Dans l'ordre, installer :
 * [OpenOCD](http://gnutoolchains.com/arm-eabi/openocd/)
     * __Attention :__ en utilisant 7-Zip, décompresser le contenu dans `C:\OpenOCD`
 * [Gnu ARM Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)
+    * __Attention :__ Choisir la version `win32-sha2`
     * __Attention :__ Accepter d'ajouter les éléments dans la variable d'environnement `Path`
 * [Ninja](https://github.com/ninja-build/ninja/releases)
     * __Attention :__ Décompresser le contenu dans

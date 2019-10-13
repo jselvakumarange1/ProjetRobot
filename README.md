@@ -1,6 +1,6 @@
 # Projet Robot
 
-Repo pour les cours de Projet Robot à l'IUT de Cachan
+Dépôt pour les cours de Projet Robot à l'IUT de Cachan
 
 ## Règles à respecter
 
@@ -34,12 +34,19 @@ Vous devez installer les logiciels qui vous seront utiles pour travailler à
 la maison. Dans l'ordre, installer :
 * [Git](https://www.git-scm.com/download)
 * [Visual Studio Code](https://code.visualstudio.com/download)
-* [Driver ST Link](https://www.st.com/en/development-tools/stsw-link009.html)
-* [OpenOCD](http://gnutoolchains.com/arm-eabi/openocd/) (Décompresser le contenu dans `C:\OpenOCD`)
-* [Gnu ARM Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)
-(Accepter d'ajouter les éléments dans la variable d'environnement `Path`)
-* [Ninja](https://github.com/ninja-build/ninja/releases) (Décompresser le contenu dans `C:\Ninja`)
+    * __Attention :__ choisir la version `User Installer - 64 bit`
 * [CMake](https://cmake.org/download/)
+    * __Attention :__ chercher `Windows win64-x64 Installer`
+* [Driver ST Link](https://www.st.com/en/development-tools/stsw-link009.html)
+* [7-Zip](https://www.7-zip.org)
+* [OpenOCD](http://gnutoolchains.com/arm-eabi/openocd/)
+    * __Attention :__ en utilisant 7-Zip, décompresser le contenu dans `C:\OpenOCD`
+* [Gnu ARM Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)
+    * __Attention :__ Accepter d'ajouter les éléments dans la variable d'environnement `Path`
+* [Ninja](https://github.com/ninja-build/ninja/releases)
+    * __Attention :__ Décompresser le contenu dans
+    `C:\Ninja`
+
 
 #### Modification des variables d'environnement sous Windows
 * Taper _variables d'environnement_ sur le bouton _Démarrer_
@@ -48,6 +55,16 @@ la maison. Dans l'ordre, installer :
     * Ajouter le chemin vers _OpenOCD_ (par exemple : `C:\OpenOCD\bin`)
     * Ajouter le chemin vers _Ninja_ (par exemple : `C:\Ninja`)
 
-Ensuite, installer les extensions sur Visual Studio Code
-* Pour cela, cloner juste votre repo sous Visual Studio Code
-* Accepter toutes les requêtes de Visual Studio Code.
+#### Installation des extensions dans _Visual Studio Code_
+* Ouvrir _Visual Studio Code_
+* Cloner votre repo
+* Accepter toutes les requêtes d'installation d'extensions de
+_Visual Studio Code_
+
+#### Paramétrage du versionning dans _Visual Studio Code_
+* Ouvrir _Visual Studio Code_
+* Suivre les captures d'écran ci-dessous pour paramétrer vos
+identifiants sur _Visual Studio Code_
+<br /><br /><img src="figures/terminal.png" width=700 align=center>
+<br /><br /><img src="figures/identifiant-github.png" width=700 align=center>
+<br /><br /><img src="figures/email-github.png" width=700 align=center>

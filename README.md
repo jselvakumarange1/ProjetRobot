@@ -39,6 +39,7 @@ la maison. Dans l'ordre, installer :
     * __Attention :__ chercher `Windows win64-x64 Installer`
 * [Driver ST Link](https://www.st.com/en/development-tools/stsw-link009.html)
 * [7-Zip](https://www.7-zip.org)
+    * __Attention :__ choisir la version `64-bit x64`
 * [OpenOCD](http://gnutoolchains.com/arm-eabi/openocd/)
     * __Attention :__ en utilisant 7-Zip, décompresser le contenu dans `C:\OpenOCD`
 * [Gnu ARM Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)

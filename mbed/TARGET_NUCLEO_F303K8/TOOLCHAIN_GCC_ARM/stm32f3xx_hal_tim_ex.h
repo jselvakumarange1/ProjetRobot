@@ -603,15 +603,15 @@ typedef struct {
   * @{
   */
 #if defined(STM32F373xC) || defined(STM32F378xx)
-                                 
+
 #define IS_TIM_CHANNELS(CHANNEL) (((CHANNEL) == TIM_CHANNEL_1) || \
                                   ((CHANNEL) == TIM_CHANNEL_2) || \
                                   ((CHANNEL) == TIM_CHANNEL_3) || \
                                   ((CHANNEL) == TIM_CHANNEL_4) || \
                                   ((CHANNEL) == TIM_CHANNEL_ALL))
-                                 
+
 #define IS_TIM_OPM_CHANNELS(CHANNEL) (((CHANNEL) == TIM_CHANNEL_1) || \
-                                      ((CHANNEL) == TIM_CHANNEL_2))                                       
+                                      ((CHANNEL) == TIM_CHANNEL_2))
 
 #define IS_TIM_COMPLEMENTARY_CHANNELS(CHANNEL) (((CHANNEL) == TIM_CHANNEL_1) || \
                                                 ((CHANNEL) == TIM_CHANNEL_2) || \
@@ -628,7 +628,7 @@ typedef struct {
                               ((MODE) == TIM_OCMODE_FORCED_INACTIVE))
 
 #define IS_TIM_CLEARINPUT_SOURCE(SOURCE)  (((SOURCE) == TIM_CLEARINPUTSOURCE_NONE) || \
-                                           ((SOURCE) == TIM_CLEARINPUTSOURCE_ETR)) 
+                                           ((SOURCE) == TIM_CLEARINPUTSOURCE_ETR))
 
 #define IS_TIM_SLAVE_MODE(MODE) (((MODE) == TIM_SLAVEMODE_DISABLE) || \
                                  ((MODE) == TIM_SLAVEMODE_RESET) || \
@@ -636,8 +636,8 @@ typedef struct {
                                  ((MODE) == TIM_SLAVEMODE_TRIGGER) || \
                                  ((MODE) == TIM_SLAVEMODE_EXTERNAL1))
 
-#define IS_TIM_EVENT_SOURCE(SOURCE) ((((SOURCE) & 0xFFFFFF00U) == 0x00000000U) && ((SOURCE) != 0x00000000U))                                          
-  
+#define IS_TIM_EVENT_SOURCE(SOURCE) ((((SOURCE) & 0xFFFFFF00U) == 0x00000000U) && ((SOURCE) != 0x00000000U))
+
 #define IS_TIM_DMA_BASE(BASE) (((BASE) == TIM_DMABASE_CR1) || \
                                ((BASE) == TIM_DMABASE_CR2) || \
                                ((BASE) == TIM_DMABASE_SMCR) || \
@@ -657,7 +657,7 @@ typedef struct {
                                ((BASE) == TIM_DMABASE_CCR4) || \
                                ((BASE) == TIM_DMABASE_BDTR) || \
                                ((BASE) == TIM_DMABASE_DCR) || \
-                               ((BASE) == TIM_DMABASE_OR))                     
+                               ((BASE) == TIM_DMABASE_OR))
 
 #endif /* STM32F373xC || STM32F378xx */
 
@@ -667,7 +667,7 @@ typedef struct {
     defined(STM32F302xC) || defined(STM32F303xC) || defined(STM32F358xx) || \
     defined(STM32F303x8) || defined(STM32F334x8) || defined(STM32F328xx) || \
     defined(STM32F301x8) || defined(STM32F302x8) || defined(STM32F318xx)
-                                 
+
 #define IS_TIM_CHANNELS(CHANNEL) (((CHANNEL) == TIM_CHANNEL_1) || \
                                   ((CHANNEL) == TIM_CHANNEL_2) || \
                                   ((CHANNEL) == TIM_CHANNEL_3) || \
@@ -675,9 +675,9 @@ typedef struct {
                                   ((CHANNEL) == TIM_CHANNEL_5) || \
                                   ((CHANNEL) == TIM_CHANNEL_6) || \
                                   ((CHANNEL) == TIM_CHANNEL_ALL))
-                                 
+
 #define IS_TIM_OPM_CHANNELS(CHANNEL) (((CHANNEL) == TIM_CHANNEL_1) || \
-                                      ((CHANNEL) == TIM_CHANNEL_2))                                       
+                                      ((CHANNEL) == TIM_CHANNEL_2))
 
 #define IS_TIM_COMPLEMENTARY_CHANNELS(CHANNEL) (((CHANNEL) == TIM_CHANNEL_1) || \
                                                 ((CHANNEL) == TIM_CHANNEL_2) || \
@@ -689,7 +689,7 @@ typedef struct {
                                ((MODE) == TIM_OCMODE_COMBINED_PWM2)      || \
                                ((MODE) == TIM_OCMODE_ASSYMETRIC_PWM1)    || \
                                ((MODE) == TIM_OCMODE_ASSYMETRIC_PWM2))
-                              
+
 #define IS_TIM_OC_MODE(MODE) (((MODE) == TIM_OCMODE_TIMING)             || \
                              ((MODE) == TIM_OCMODE_ACTIVE)             || \
                              ((MODE) == TIM_OCMODE_INACTIVE)           || \
@@ -703,7 +703,7 @@ typedef struct {
                                         ((MODE) == TIM_CLEARINPUTSOURCE_OCREFCLR)  || \
                                         ((MODE) == TIM_CLEARINPUTSOURCE_NONE))
 
-#define IS_TIM_BREAK_FILTER(BRKFILTER) ((BRKFILTER) <= 0xFU) 
+#define IS_TIM_BREAK_FILTER(BRKFILTER) ((BRKFILTER) <= 0xFU)
 
 #define IS_TIM_BREAK2_STATE(STATE) (((STATE) == TIM_BREAK2_ENABLE) || \
                                     ((STATE) == TIM_BREAK2_DISABLE))
@@ -736,8 +736,8 @@ typedef struct {
                                  ((MODE) == TIM_SLAVEMODE_EXTERNAL1) || \
                                  ((MODE) == TIM_SLAVEMODE_COMBINED_RESETTRIGGER))
 
-#define IS_TIM_EVENT_SOURCE(SOURCE) ((((SOURCE) & 0xFFFFFE00U) == 0x00000000U) && ((SOURCE) != 0x00000000U))                                          
-  
+#define IS_TIM_EVENT_SOURCE(SOURCE) ((((SOURCE) & 0xFFFFFE00U) == 0x00000000U) && ((SOURCE) != 0x00000000U))
+
 #define IS_TIM_DMA_BASE(BASE) (((BASE) == TIM_DMABASE_CR1)   || \
                                ((BASE) == TIM_DMABASE_CR2)   || \
                                ((BASE) == TIM_DMABASE_SMCR)  || \
@@ -759,7 +759,7 @@ typedef struct {
                                ((BASE) == TIM_DMABASE_CCMR3) || \
                                ((BASE) == TIM_DMABASE_CCR5)  || \
                                ((BASE) == TIM_DMABASE_CCR6)  || \
-                               ((BASE) == TIM_DMABASE_OR))                     
+                               ((BASE) == TIM_DMABASE_OR))
 
 #endif /* STM32F302xE || STM32F303xE || STM32F398xx || */
        /* STM32F302xC || STM32F303xC || STM32F358xx || */
@@ -891,7 +891,7 @@ typedef struct {
        /* STM32F303x8 || STM32F334x8 || STM32F328xx || */
        /* STM32F301x8 || STM32F302x8 || STM32F318xx    */
 
-#define IS_TIM_DEADTIME(DEADTIME)      ((DEADTIME) <= 0xFFU) 
+#define IS_TIM_DEADTIME(DEADTIME)      ((DEADTIME) <= 0xFFU)
 
 /**
   * @}

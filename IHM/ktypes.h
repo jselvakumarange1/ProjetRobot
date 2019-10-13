@@ -1,3 +1,7 @@
+//  Copyright (c) 2019 Antoine Tran Tan
+//  Copyright (c) 2012 Jacques-Olivier Klein
+//
+
 #ifndef __KTYPES_H__
 #define __KTYPES_H__
 
@@ -11,7 +15,7 @@
 /*                                                                                      */
 /* INSTITUTION: IUT de CACHAN - 9 av. de la div. Leclerc - 94230 CACHAN                 */
 /*                                                                                      */
-/* DATE       : 03/07/2012                                                              */  
+/* DATE       : 03/07/2012                                                              */
 /* CPU        : FREESCALE MC9S12XS128MAA                                                */
 /* BOARD      : CACHAN Xboard+MicroB12                                                  */
 /* OS         : None                                                                    */

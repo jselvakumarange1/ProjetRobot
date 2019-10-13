@@ -32,7 +32,7 @@
 #define   LCD_CHAR2      0x702 //|  M  |  O  |  D  |char 16 a 23 sur LCD|  8   |  U8  | C16|C17|C18|C19|C20|C21|C22|C23   |
 #define   LCD_CHAR3      0x703 //|  M  |  O  |  D  |char 24 a 31 sur LCD|  8   |  U8  | C24|C25|C26|C27|C28|C29|C30|C31   |
 //                             //|     |     |     |                    |      |      |                                   |
-//                       0x704 //|     |     |     |                    |      |      | Reserve pour un éventuel LCD      |
+//                       0x704 //|     |     |     |                    |      |      | Reserve pour un eventuel LCD      |
 // Réservé               ...   //|     |     |     |                    |      |      | plus grand ou tactile             |
 //                       0x77D //|     |     |     |                    |      |      |                                   |
 //                             //|     |     |     |                    |      |      |                                   |
@@ -50,9 +50,9 @@
 //------------------------------------------------------------------------------------------------------------------------|
 /* Légende : I = Consigne pour la carte
              O = Etat donné par la carte
-             
+
              D = Trame de données
              R = Trame de requete */
-             
+
 #endif
 

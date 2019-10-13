@@ -1,4 +1,4 @@
-/// @file IHM.h Bibliothéque de classe pour la carte l'IHM de la carte NBoard
+/// @file IHM.h Bibliotheque de classe pour la carte IHM de la carte NBoard
 /// @mainpage
 ///
 ///
@@ -23,7 +23,7 @@
 
 ///#include "IHM.h"
 ///IHM ihm;  //clase IHM
-///Serial pc(SERIAL_TX, SERIAL_RX);  // I/O terminal PC 
+///Serial pc(SERIAL_TX, SERIAL_RX);  // I/O terminal PC
 ///int main()
 ///{
 ///    unsigned char codeur=0,jog;
@@ -42,14 +42,14 @@
 ///    ihm.LCD_clear();
 ///    while(1) {
 ///        wait(0.1);
-///        codeur=ihm.COD_read();      
+///        codeur=ihm.COD_read();
 ///        jog=ihm.JOG_read();
 ///        ihm.BAR_set((UINT16)(codeur));
 ///        ihm.LCD_gotoxy(0,0);
 ///        ihm.LCD_printf("Jog=%02d",jog);
 ///        ihm.LCD_gotoxy(1,0);
 ///        ihm.LCD_printf("Cod=%03d",codeur);
-///        pc.printf("Jog=%02d  Cod=%03d \n",jog,codeur); 
+///        pc.printf("Jog=%02d  Cod=%03d \n",jog,codeur);
 ///    }
 ///}
 /// @endcode
@@ -67,7 +67,7 @@ public:
     /// @param valeur à afficher sur le bargraph
     /// @returns void
     ///
-    void BAR_set(UINT16 valeur);  
+    void BAR_set(UINT16 valeur);
     /// lecteur du codeur
     ///
     /// Retourne la valeur du codeur (0-255)

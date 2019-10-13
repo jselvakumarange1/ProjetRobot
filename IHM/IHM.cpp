@@ -106,7 +106,7 @@ void IHM::CAN_automate_reception(void)
 /* BOARD      : CACHAN Xboard + IHM16x2                                                 */
 /* OS         : None                                                                    */
 /*                                                                                      */
-/* DESCRIPTION: Fonctions d'accès au Lcd émulé passant par le bus CAN                   */
+/* DESCRIPTION: Fonctions d'acces au Lcd emule passant par le bus CAN                   */
 /****************************************************************************************/
 
 

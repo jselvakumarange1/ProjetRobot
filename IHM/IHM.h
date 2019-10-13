@@ -1,3 +1,7 @@
+//  Copyright (c) 2019 Antoine Tran Tan
+//  Copyright (c) 2016 Gilles Raynaud
+//
+
 /// @file IHM.h Bibliotheque de classe pour la carte IHM de la carte NBoard
 /// @mainpage
 ///

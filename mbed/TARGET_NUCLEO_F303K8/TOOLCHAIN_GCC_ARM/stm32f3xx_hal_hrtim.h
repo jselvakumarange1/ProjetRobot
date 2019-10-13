@@ -1329,8 +1329,8 @@ typedef struct {
            fast mode
   */
 
-#define HRTIM_EVENTFASTMODE_ENABLE 	(0x00000000U) 		/*!< External Event is re-synchronized by the HRTIM logic before acting on outputs */
-#define HRTIM_EVENTFASTMODE_DISABLE 	(HRTIM_EECR1_EE1FAST) 	/*!< External Event is acting asynchronously on outputs (low latency mode) */
+#define HRTIM_EVENTFASTMODE_ENABLE     (0x00000000U)         /*!< External Event is re-synchronized by the HRTIM logic before acting on outputs */
+#define HRTIM_EVENTFASTMODE_DISABLE     (HRTIM_EECR1_EE1FAST)     /*!< External Event is acting asynchronously on outputs (low latency mode) */
 /**
   * @}
   */

@@ -1,3 +1,7 @@
+//  Copyright (c) 2019 Antoine Tran Tan
+//  Copyright (c) 2016 Gilles Raynaud
+//
+
 #include "IHM.h"
 #include "all_includes.h"
 #include <stdarg.h>  // Pour va_list ... dans IHM_printf

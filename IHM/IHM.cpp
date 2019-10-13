@@ -175,11 +175,11 @@ void IHM::BAR_set(UINT16 valeur)
                   et l'enfoncement (PUSH) du Jog, exprimes sur 5 bits utiles.*/
 
 /*         - Si le Jog est au repos : la fonction renvoie 0 (0x00).
-         - si le Jog n'est pas au repos : 1 a 3 bits peuvent être mis a 1 dans l'octet renvoye.
+         - si le Jog n'est pas au repos : 1 a 3 bits peuvent etre mis a 1 dans l'octet renvoye.
            Il est interessant d'utiliser les masques definis en constantes.
            La signification des 8 bits de la valeur renvoyee est:
                      0   0   0   RIGHT   UP   PUSH   LEFT   DOWN
-           Plusieurs bits peuvent être a 1 en même temps. Par exemple :  RIGHT + UP + PUSH
+           Plusieurs bits peuvent etre a 1 en meme temps. Par exemple :  RIGHT + UP + PUSH
            a 1 indiquent que le Jog est en position "Nord Est " (UP+RIGHT) et qu'il est enfonce.
            Si le Jog est simultanement enfonce et positionne a droite, la fonction renvoie
            (0001 0100) en binaire, soit 0x14. Exprimee avec les masques, la valeur renvoyee vaut

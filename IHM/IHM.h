@@ -62,7 +62,7 @@ class IHM
 {
 public:
     /// Constructeur pour l'IHM de la carte NBoard, place a l'exterieur du main
-    /// Les parametres peuvent être omis (ils ont tous une valeur par defaut)
+    /// Les parametres peuvent etre omis (ils ont tous une valeur par defaut)
     ///
     IHM(PinName CANRx=PA_11, PinName CANTx=PA_12);
     /// commande des 10 leds du bargraph

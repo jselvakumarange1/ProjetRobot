@@ -51,11 +51,16 @@ la maison. Dans l'ordre, installer :
     `C:\Ninja`
 
 #### Modification des variables d'environnement sous Windows
-* Taper _variables d'environnement_ sur le bouton _Démarrer_
-* Cliquer sur le bouton `variables d'environnement`
-* Sélectionner la variable `Path` puis cliquer sur `Modifier`
-    * Ajouter le chemin vers _OpenOCD_ (par exemple : `C:\OpenOCD\bin`)
-    * Ajouter le chemin vers _Ninja_ (par exemple : `C:\Ninja`)
+* Taper _variables d'environnement_ sur le bouton _Démarrer_ puis
+cliquer sur `Modifier les variables d'environnement système`
+* Cliquer sur le bouton `Variables d'environnement ...`
+* Dans le champ **_Variables système_**, sélectionner la variable `Path` puis
+cliquer sur `Modifier ...`
+    * Ajouter le chemin vers _OpenOCD_ (par exemple : `C:\OpenOCD\bin`) en
+    cliquant successivement sur `Nouveau` et sur `Parcourir ...`
+    * De même, ajouter le chemin vers _Ninja_ (par exemple : `C:\Ninja`)
+     en recliquant successivement sur `Nouveau` et sur `Parcourir ...`
+* Cliquer `OK`
 
 ### À la maison (si vous avez Mac OS X)
 

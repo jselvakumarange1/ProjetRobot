@@ -42,6 +42,8 @@ la maison. Dans l'ordre, installer :
     * __Attention :__ choisir la version `64-bit x64`
 * [OpenOCD](http://gnutoolchains.com/arm-eabi/openocd/)
     * __Attention :__ en utilisant 7-Zip, décompresser le contenu dans `C:\OpenOCD`
+    * __Attention :__ Vérifier bien que l'arborescence soit identique à la capture ci-dessous
+    <br /><br /><img src="figures/openocd.jpg" width=550 align=center>
 * [Gnu ARM Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)
     * __Attention :__ Choisir la version `major-win32.exe`
     * __Attention :__ Accepter d'ajouter les éléments dans la variable d'environnement `Path`
@@ -49,6 +51,9 @@ la maison. Dans l'ordre, installer :
     * __Attention :__ Choisir la version `ninja-win.zip`
     * __Attention :__ Décompresser le contenu dans
     `C:\Ninja`
+    * __Attention :__ Vérifier bien que l'arborescence soit identique à la capture ci-dessous
+    <br /><br /><img src="figures/ninja.jpg" width=550 align=center>
+
 
 #### Modification des variables d'environnement sous Windows
 * Taper _variables d'environnement_ sur le bouton _Démarrer_ puis

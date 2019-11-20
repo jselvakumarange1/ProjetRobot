@@ -47,6 +47,8 @@ la maison. Dans l'ordre, installer :
 * [Gnu ARM Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)
     * __Attention :__ Choisir la version `major-win32.exe`
     * __Attention :__ Accepter d'ajouter les éléments dans la variable d'environnement `Path`
+    comme dans la capture ci-dessous
+    <br /><br /><img src="figures/gnu_arm.png" width=550 align=center>
 * [Ninja](https://github.com/ninja-build/ninja/releases)
     * __Attention :__ Choisir la version `ninja-win.zip`
     * __Attention :__ Décompresser le contenu dans

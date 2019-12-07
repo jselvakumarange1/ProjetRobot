@@ -12,6 +12,10 @@
 /// @note
 /// History
 /// v2.00 05/11/2016
+
+#ifndef IHM_H
+#define IHM_H
+
 #include "all_includes.h"
 #define SIZE_FIFO 32
 #define MESSAGE_BUFFER_SIZE 20
@@ -120,3 +124,5 @@ char tableau_ecran[65],tableau_temporaire[200];
     void can_ISR_Reader(void);
     void CAN_automate_reception(void);
 };
+
+#endif

@@ -4,8 +4,6 @@
 #include "IHM.h"
 #include "NBoard.h"
 
-IHM ihm;
-
 int main()
 {
     while(1)
